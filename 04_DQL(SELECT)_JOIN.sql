@@ -263,6 +263,7 @@ SELECT
        EMPLOYEE
   JOIN
        JOB USING (JOB_CODE)
+       -- JOB J ON (J.JOB_CODE = E.JOB_CODE)
  WHERE
        JOB_NAME = '대리';
 
